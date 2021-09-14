@@ -2,6 +2,14 @@ import { createRouter, createWebHistory } from "vue-router";
 import Title from "@/slides/Title";
 import Agenda from "@/slides/Agenda";
 import Definition from "@/slides/Definition";
+import ReactQuery from "@/slides/ReactQuery";
+import HeadlessUI from "@/slides/HeadlessUI";
+import Advantages from "@/slides/Advantages";
+import Disadvantages from "@/slides/Disadvantages";
+import UseCases from "@/slides/UseCases";
+import BadCases from "@/slides/BadCases";
+import Examples from "@/slides/Examples";
+import Modals from "@/slides/Modals";
 
 export const routes = [
   {
@@ -19,6 +27,38 @@ export const routes = [
   {
     name: "Definition",
     component: Definition,
+  },
+  {
+    name: "ReactQuery",
+    component: ReactQuery,
+  },
+  {
+    name: "HeadlessUI",
+    component: HeadlessUI,
+  },
+  {
+    name: "Advantages",
+    component: Advantages,
+  },
+  {
+    name: "Disadvantages",
+    component: Disadvantages,
+  },
+  {
+    name: "UseCases",
+    component: UseCases,
+  },
+  {
+    name: "BadCases",
+    component: BadCases,
+  },
+  {
+    name: "Examples",
+    component: Examples,
+  },
+  {
+    name: "Modals",
+    component: Modals,
   },
 ].map((route, i) => ({
   path: `/${i - 1}`,

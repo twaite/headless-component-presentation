@@ -1,7 +1,7 @@
 <template>
   <slide>
-    <h1>Headless Components</h1>
-    <h3>Tim Waite</h3>
+    <slide-title>Headless Components</slide-title>
+    <slide-subtitle>Tim Waite</slide-subtitle>
   </slide>
 </template>
 
