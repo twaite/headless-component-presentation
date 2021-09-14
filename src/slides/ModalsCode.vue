@@ -69,6 +69,6 @@
 
 <style lang="postcss" scoped>
 .layout {
-  @apply flex justify-around pt-4;
+  @apply flex justify-around pt-10;
 }
 </style>

@@ -11,6 +11,7 @@ import BadCases from "@/slides/BadCases";
 import Examples from "@/slides/Examples";
 import Modals from "@/slides/Modals";
 import ModalsCode from "@/slides/ModalsCode";
+import Dropdowns from "@/slides/Dropdowns";
 
 export const routes = [
   {
@@ -64,6 +65,10 @@ export const routes = [
   {
     name: "ModalsCode",
     component: ModalsCode,
+  },
+  {
+    name: "Dropdowns",
+    component: Dropdowns,
   },
 ].map((route, i) => ({
   path: `/${i - 1}`,
