@@ -1,6 +1,6 @@
 <template>
   <slide>
-    <slide-title>Dropdowns</slide-title>
+    <slide-title>RadioGroup</slide-title>
     <div class="layout">
       <tailwind-radio-group />
       <material-radio-group />

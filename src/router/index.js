@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Title from "@/slides/Title";
 import Agenda from "@/slides/Agenda";
 import Definition from "@/slides/Definition";
-import ReactQuery from "@/slides/ReactQuery";
+import ReactTable from "@/slides/ReactTable";
 import HeadlessUI from "@/slides/HeadlessUI";
 import Advantages from "@/slides/Advantages";
 import Disadvantages from "@/slides/Disadvantages";
@@ -14,6 +14,8 @@ import ModalsCode from "@/slides/ModalsCode";
 import Dropdowns from "@/slides/Dropdowns";
 import DropdownsCode from "@/slides/DropdownsCode";
 import RadioGroup from "@/slides/RadioGroup";
+import RadioGroupCode from "@/slides/RadioGroupCode";
+import Questions from "@/slides/Questions";
 
 export const routes = [
   {
@@ -33,8 +35,8 @@ export const routes = [
     component: Definition,
   },
   {
-    name: "ReactQuery",
-    component: ReactQuery,
+    name: "ReactTable",
+    component: ReactTable,
   },
   {
     name: "HeadlessUI",
@@ -79,6 +81,14 @@ export const routes = [
   {
     name: "RadioGroup",
     component: RadioGroup,
+  },
+  {
+    name: "RadioGroupCode",
+    component: RadioGroupCode,
+  },
+  {
+    name: "Questions",
+    component: Questions,
   },
 ].map((route, i) => ({
   path: `/${i - 1}`,

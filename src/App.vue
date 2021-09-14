@@ -35,8 +35,6 @@ export default {
           return previous();
       }
     });
-
-    document.addEventListener("click", next);
   },
 };
 </script>

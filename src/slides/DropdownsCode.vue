@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <div>
-      <slide-subtitle>Tailwind Modal</slide-subtitle>
+      <slide-subtitle>Tailwind Dropdown</slide-subtitle>
       <code-block>
         {{`<Menu as="div" class="relative inline-block text-left">
           <MenuButton
@@ -34,7 +34,7 @@
       </code-block>
     </div>
     <div>
-      <slide-subtitle>Material Modal</slide-subtitle>
+      <slide-subtitle>Material Dropdown</slide-subtitle>
       <code-block>
         {{`<Menu as="div" class="relative inline-block text-left">
           <MenuButton
