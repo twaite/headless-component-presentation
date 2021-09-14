@@ -12,6 +12,7 @@ import Examples from "@/slides/Examples";
 import Modals from "@/slides/Modals";
 import ModalsCode from "@/slides/ModalsCode";
 import Dropdowns from "@/slides/Dropdowns";
+import DropdownsCode from "@/slides/DropdownsCode";
 
 export const routes = [
   {
@@ -69,6 +70,10 @@ export const routes = [
   {
     name: "Dropdowns",
     component: Dropdowns,
+  },
+  {
+    name: "DropdownsCode",
+    component: DropdownsCode,
   },
 ].map((route, i) => ({
   path: `/${i - 1}`,

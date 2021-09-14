@@ -3,9 +3,9 @@
     <slide-title>Agenda</slide-title>
     <ul>
       <li>What are Headless components?</li>
-      <li>Examples</li>
+      <li>Libraries</li>
       <li>Use Cases / Advantages</li>
-      <li>Example Code</li>
+      <li>Headless UI Examples</li>
     </ul>
   </slide>
 </template>
