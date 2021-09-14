@@ -1,6 +1,6 @@
 <template>
   <slide>
-    <h1>Use Cases</h1>
+    <slide-title>Use Cases</slide-title>
     <ul>
       <li>
         Building out a component library and you don't want to start from

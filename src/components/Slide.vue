@@ -17,10 +17,6 @@ li {
   @apply pb-6;
 }
 
-p {
-  @apply bg-gray-700 rounded-lg py-6 px-8 text-3xl text-center max-w-xl;
-}
-
 iframe {
   @apply w-full h-full shadow-lg;
 }

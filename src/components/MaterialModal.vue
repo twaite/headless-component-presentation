@@ -29,25 +29,25 @@
             leave-to="opacity-0 scale-95"
           >
             <div
-              class="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-2xl rounded-2xl"
+              class="inline-block w-full max-w-md overflow-hidden text-left align-middle transition-all transform bg-white shadow-lg rounded-sm"
             >
               <DialogTitle
                 as="h4"
-                class="text-xl font-medium leading-6 text-gray-900"
+                class="text-xl font-medium leading-6 text-gray-900 border-b-2 border-gray-200 px-6 py-4"
               >
                 Payment successful
               </DialogTitle>
-              <div class="mt-2">
+              <div class="mt-2 px-6 py-4 border-b-2 border-gray-200">
                 <p class="text-sm text-gray-500 bg-none">
                   Your payment has been successfully submitted. We’ve sent your
                   an email with all of the details of your order.
                 </p>
               </div>
 
-              <div class="mt-4">
+              <div class="flex justify-end px-6 py-4">
                 <button
                   type="button"
-                  class="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                  class="text-blue-500 uppercase text-sm"
                   @click="closeModal"
                 >
                   Got it, thanks!
@@ -91,3 +91,9 @@ export default {
   },
 };
 </script>
+
+<style lang="postcss" scoped>
+:root {
+  font-family: "Roboto", sans-serif;
+}
+</style>
