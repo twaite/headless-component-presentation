@@ -10,6 +10,7 @@ import UseCases from "@/slides/UseCases";
 import BadCases from "@/slides/BadCases";
 import Examples from "@/slides/Examples";
 import Modals from "@/slides/Modals";
+import ModalsCode from "@/slides/ModalsCode";
 
 export const routes = [
   {
@@ -59,6 +60,10 @@ export const routes = [
   {
     name: "Modals",
     component: Modals,
+  },
+  {
+    name: "ModalsCode",
+    component: ModalsCode,
   },
 ].map((route, i) => ({
   path: `/${i - 1}`,

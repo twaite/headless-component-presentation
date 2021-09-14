@@ -2,10 +2,10 @@
   <slide>
     <slide-title>Modal Example</slide-title>
     <div class="button-group">
-      <button class="tw-btn" @click="toggleTailwindModal">
+      <button class="tw-btn" @click.stop="toggleTailwindModal">
         Show Tailwind Modal
       </button>
-      <button class="mat-btn" @click="toggleMaterialModal">
+      <button class="mat-btn" @click.stop="toggleMaterialModal">
         Show Bootstrap Modal
       </button>
     </div>
@@ -25,8 +25,10 @@ export default {
     const tailwindModalIsOpen = ref(false);
     const materialModalIsOpen = ref(false);
 
-    const toggleTailwindModal = () =>
-      (tailwindModalIsOpen.value = !tailwindModalIsOpen.value);
+    const toggleTailwindModal = () => {
+      tailwindModalIsOpen.value = !tailwindModalIsOpen.value;
+    };
+
     const toggleMaterialModal = () =>
       (materialModalIsOpen.value = !materialModalIsOpen.value);
 
