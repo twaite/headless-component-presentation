@@ -1,5 +1,9 @@
 <template>
-  <router-view />
+  <div class="app">
+    <transition name="slide-fade">
+      <router-view />
+    </transition>
+  </div>
 </template>
 
 <script>
@@ -36,3 +40,25 @@ export default {
   },
 };
 </script>
+
+<style lang="postcss">
+.app {
+  @apply bg-gray-800 border-b-8 border-green-400 h-screen w-screen;
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-leave-active {
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(50%);
+  opacity: 0;
+}
+</style>

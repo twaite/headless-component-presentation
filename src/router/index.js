@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Title from "@/slides/Title";
 import Agenda from "@/slides/Agenda";
+import Definition from "@/slides/Definition";
 
 export const routes = [
   {
@@ -8,24 +9,21 @@ export const routes = [
     redirect: "/0",
   },
   {
-    path: "/0",
     name: "Title",
     component: Title,
   },
   {
-    path: "/1",
     name: "Agenda",
     component: Agenda,
   },
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  // }
-];
+  {
+    name: "Definition",
+    component: Definition,
+  },
+].map((route, i) => ({
+  path: `/${i - 1}`,
+  ...route,
+}));
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
