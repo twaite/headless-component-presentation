@@ -1,11 +1,21 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Title from "@/slides/Title";
+import Agenda from "@/slides/Agenda";
 
-const routes = [
+export const routes = [
   {
     path: "/",
+    redirect: "/0",
+  },
+  {
+    path: "/0",
     name: "Title",
     component: Title,
+  },
+  {
+    path: "/1",
+    name: "Agenda",
+    component: Agenda,
   },
   // {
   //   path: '/about',
