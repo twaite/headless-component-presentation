@@ -13,6 +13,7 @@ import Modals from "@/slides/Modals";
 import ModalsCode from "@/slides/ModalsCode";
 import Dropdowns from "@/slides/Dropdowns";
 import DropdownsCode from "@/slides/DropdownsCode";
+import RadioGroup from "@/slides/RadioGroup";
 
 export const routes = [
   {
@@ -74,6 +75,10 @@ export const routes = [
   {
     name: "DropdownsCode",
     component: DropdownsCode,
+  },
+  {
+    name: "RadioGroup",
+    component: RadioGroup,
   },
 ].map((route, i) => ({
   path: `/${i - 1}`,

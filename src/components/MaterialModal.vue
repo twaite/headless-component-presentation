@@ -93,7 +93,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-:root {
+* {
   font-family: "Roboto", sans-serif;
 }
 </style>

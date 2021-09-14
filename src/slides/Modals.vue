@@ -6,7 +6,7 @@
         Show Tailwind Modal
       </button>
       <button class="mat-btn" @click.stop="toggleMaterialModal">
-        Show Bootstrap Modal
+        Show Material Modal
       </button>
     </div>
     <tailwind-modal :open="tailwindModalIsOpen" @close="toggleTailwindModal" />
